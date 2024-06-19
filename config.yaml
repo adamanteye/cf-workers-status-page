@@ -24,3 +24,19 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
+  - id: game-thudep22-cn
+    name: game.thudep22.cn
+    url: 'https://game.thudep22.cn/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+
+  - id: csset-doc-thudep22-cn
+    name: csset-doc.thudep22.cn
+    \description: 'CSSET开发文档'
+    url: 'https://csset-doc.thudep22.cn/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
