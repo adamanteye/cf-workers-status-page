@@ -1,8 +1,8 @@
 settings:
-  title: 'Status Page'
+  title: 'THUDEP22 STATUS PAGE'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 60 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: learn-thudep22-cn # unique identifier
-    name: learn.thudep22.cn
+    name: learn
     description: '工物系学习仓库' # default=empty
     url: 'https://learn.thudep22.cn/' # URL to fetch
     method: GET # default=GET
@@ -25,15 +25,16 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: cordle-thudep22-cn
-    name: cordle.thudep22.cn
+    name: game/cordle
     url: 'https://game.thudep22.cn/cordle/'
+    description: 'cordle 游戏'
     method: GET
     expectStatus: 200
     followRedirect: false
     linkable: false
 
   - id: csset-doc-thudep22-cn
-    name: csset-doc.thudep22.cn
+    name: csset-doc
     description: 'CSSET开发文档'
     url: 'https://csset-doc.thudep22.cn/'
     method: GET
