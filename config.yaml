@@ -41,3 +41,12 @@ monitors:
     expectStatus: 200
     followRedirect: false
     linkable: false
+
+  - id: doc-thudep22-cn
+    name: doc
+    description: 'HedgeDoc'
+    url: 'https://doc.thudep22.cn/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
